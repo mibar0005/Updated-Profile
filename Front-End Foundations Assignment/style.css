@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  header {
+    background-color: #000;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-family: cursive;
+    font-size: 52px;
+    color: #e69109;
+    padding: 10px 0 10px 5px;;
+  }
+  
+  .photo {
+      width: 200px;
+  }
+  
+  /* ---  Navigation --- */
+  
+  header nav,
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  header nav ul li {
+    list-style-type: none;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px 0 0;
+    font-family: sans-serif;
+  }
+  
+  header nav ul li a:hover {
+    color: #e69109;
+  }
+  
+  @media all and (min-width: 600px) {
+    header {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .title {
+      margin: 14px 0 14px 14px;
+      padding-top: 0;
+      font-size: 42px;
+    }
+
+    header nav {
+      margin-top: 14px;
+    }
+  }
+  
+  /* ---  Primary Groups --- */
+  
+  main {
+    padding: 20px 0;
+    font-weight: 500;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  section.background {   
+    background-color: #8d8d8a;
+  }
+  
+  section.projects {
+    background-color: #8d8d8a;
+  }
+
+  section.contact {
+      background-color:rgb(226, 247, 170)
+  }
+
+  footer {
+    background-color: #403933;
+  }
+  
+  /* ---  Typography --- */
+  
+  h1 {
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #403933;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin: 5px 10px;
+    text-align: center;
+  }
+  
+
+  h3 {
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 500;
+  }
+  
+  p {
+   font-family: 'Montserrat', sans-serif;
+   line-height: 25px;
+  }
+
+  main a:link { 
+      color: #000000; 
+      text-decoration: none;
+    }
+
+  main  a:visited {
+    color: #1e0144; 
+    }
+
+  main  a:hover {
+    color: #cf0c06;
+     }
+
+  a:active {
+       color: #cad805;
+     }
+
+  footer h5 {
+    color: rgb(207, 153, 5);
+    text-align: center;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif
+  }
+  
+  main img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    flex: 1;
+    /*Add a 10-12 px margin so the images will not be smushed together*/
+    margin: 12px;
+  }
+  
+  .item-double {
+      /*Use the flex property to add double*/
+    flex: 2;
+  }
+  
+
+  /* ---  (Desktop) Groups & Items --- */
+  
+  @media all and (min-width: 600px) {
+    section {
+      padding: 0 10%;
+    }
+    .group {
+      flex-direction: row;
+    }
+  }
+  
+  /* Contact Form Design */
+  
+  form label {
+    display: block;
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  form textarea {
+    height: 100px;
+  }
+
+  fieldset{
+      border-style: double;
+      border-color:rgb(3, 1, 75)
+  }
+  
+  
+  
+  
+  
+  
+  
+  
